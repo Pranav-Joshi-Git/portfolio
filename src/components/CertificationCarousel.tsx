@@ -96,7 +96,7 @@ export default function CertificationCarousel() {
               width: '72px',
               height: '72px',
               color: color,
-              opacity: 0.1,
+              opacity: 0.75,
               pointerEvents: 'none',
               userSelect: 'none',
             }}>
