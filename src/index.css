@@ -11,12 +11,14 @@
   /* ─── Text ─── */
   --color-text: #1C1C1A;
   --color-text-muted: #6B6860;
-  --color-text-faint: #A09D98;
+  --color-text-faint: #676563;
 
   /* ─── Accent — swap these two lines to retheme the entire site ─── */
   --color-accent: #F5C518;
   --color-accent-dark: #D4A900;
+  --color-accent-text: #7A5C00;
   --color-on-accent: #1C1C1A;
+  --color-github-logo: #24292e;
 
   /* ─── Structure ─── */
   --color-border: #E4E2DE;
@@ -33,9 +35,11 @@
   --color-nav-bg: rgba(17, 17, 16, 0.92);
   --color-text: #EEECEA;
   --color-text-muted: #9B9892;
-  --color-text-faint: #6B6860;
+  --color-text-faint: #8A8785;
   --color-accent: #F5C518;
   --color-accent-dark: #D4A900;
+  --color-accent-text: #F5C518;
+  --color-github-logo: #EEECEA;
   --color-border: #2C2C29;
 }
 
@@ -126,6 +130,19 @@ body {
 
 @media (max-width: 640px) {
   .stats-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ─── Certification carousel card track ─── */
+.cert-carousel-track {
+  position: relative;
+  min-height: 155px;
+  overflow: hidden;
+}
+
+@media (max-width: 480px) {
+  .cert-carousel-track {
+    min-height: 190px;
+  }
 }
 
 /* ─── Nav responsive ─── */

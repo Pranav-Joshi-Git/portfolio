@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import avatar from '../assets/logo.png'
+import avatarWebp from '../assets/logo.png?w=90&format=webp&as=url'
+import avatarPng from '../assets/logo.png?w=90&as=url'
 import { meta } from '../data'
 
 const links = [
@@ -128,7 +129,10 @@ export default function Nav() {
             onClick={() => scrollTo('hero')}
             style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', background: 'none', border: 'none', cursor: 'pointer', flexShrink: 0 }}
           >
-            <img src={avatar} alt="Pranav Joshi" style={{ width: 30, height: 30, borderRadius: '50%', objectFit: 'cover' }} />
+            <picture>
+              <source srcSet={avatarWebp} type="image/webp" />
+              <img src={avatarPng} alt="Pranav Joshi" style={{ width: 30, height: 30, borderRadius: '50%', objectFit: 'cover' }} />
+            </picture>
             <span style={{ fontWeight: 600, fontSize: '0.875rem', color: 'var(--color-text)', whiteSpace: 'nowrap' }}>
               Pranav Joshi
             </span>

@@ -1,0 +1,14 @@
+# Pranav Joshi — AEM & Edge Delivery Services Developer
+
+> Personal portfolio of Pranav Joshi, an AEM and Edge Delivery Services Developer and Associate Consultant at Infosys with 4+ years of experience. Specialises in Adobe Experience Manager Sites, Adaptive Forms, DAM, and Edge Delivery Services. Based in Pune, India.
+
+## Sections
+
+- [Home](https://ipranavjoshi.com/)
+- [Experience](https://ipranavjoshi.com/#experience)
+- [About](https://ipranavjoshi.com/#about)
+- [Contact](https://ipranavjoshi.com/#contact)
+
+## Resume
+
+- [Download Resume](https://ipranavjoshi.com/resume.pdf)

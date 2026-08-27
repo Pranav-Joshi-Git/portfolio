@@ -50,7 +50,7 @@ export default function StatsGrid() {
           >
             {value}
           </motion.p>
-          <p style={{ fontSize: '0.75rem', color: 'var(--color-text-faint)', fontWeight: 500, lineHeight: 1.3 }}>
+          <p style={{ fontSize: '0.75rem', color: 'var(--color-text)', fontWeight: 500, lineHeight: 1.3 }}>
             {label}
           </p>
         </motion.div>

@@ -37,6 +37,7 @@ export interface Certification {
   name: string
   url: string
   brand: 'adobe' | 'microsoft' | 'github'
+  type: 'certification' | 'course'
 }
 
 export interface CurrentItem {

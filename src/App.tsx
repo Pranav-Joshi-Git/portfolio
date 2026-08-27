@@ -26,7 +26,7 @@ export default function App() {
           <SkillGroups />
         </Section>
 
-        <Section label="Certifications">
+        <Section label="Courses & Certifications">
           <CertificationCarousel />
         </Section>
 
