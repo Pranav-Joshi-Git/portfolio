@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Prevent flash of wrong theme before React hydrates -->
+    <script>
+      (function () {
+        var stored = localStorage.getItem('theme');
+        var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.setAttribute('data-theme', stored || (prefersDark ? 'dark' : 'light'));
+      })();
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+    <meta name="theme-color" content="#F5C518" />
+
+    <!-- Primary SEO -->
+    <title>Pranav Joshi — AEM &amp; Edge Delivery Services Developer</title>
+    <meta name="description" content="Pranav Joshi is an AEM and Edge Delivery Services Developer and Associate Consultant at Infosys. 4+ years across AEM Sites, Adaptive Forms, DAM, and Edge Delivery Services. Based in Pune, India." />
+    <meta name="keywords" content="Pranav Joshi, AEM Developer, Adobe Experience Manager, Edge Delivery Services, AEM Developer Pune, Infosys AEM, Pranav Joshi Developer, Pranav Joshi AEM" />
+    <meta name="author" content="Pranav Joshi" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://ipranavjoshi.com" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ipranavjoshi.com" />
+    <meta property="og:title" content="Pranav Joshi — AEM &amp; Edge Delivery Services Developer" />
+    <meta property="og:description" content="Associate Consultant at Infosys. 4+ years working across AEM Sites, Adaptive Forms, DAM, and Edge Delivery Services. Based in Pune, India." />
+    <meta property="og:site_name" content="Pranav Joshi" />
+    <meta property="og:locale" content="en_IN" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Pranav Joshi — AEM &amp; Edge Delivery Services Developer" />
+    <meta name="twitter:description" content="Associate Consultant at Infosys. 4+ years working across AEM Sites, Adaptive Forms, DAM, and Edge Delivery Services." />
+
+    <!-- Google Fonts — link tags load faster than CSS @import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" />
+
+    <!-- Structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Pranav Joshi",
+      "url": "https://ipranavjoshi.com",
+      "jobTitle": "AEM & Edge Delivery Services Developer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Infosys"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Pune",
+        "addressCountry": "IN"
+      },
+      "email": "pranav.joshi.edu@gmail.com",
+      "sameAs": [
+        "https://www.linkedin.com/in/pranav-joshi-8598b0205/",
+        "https://github.com/Pranav-Joshi-Git"
+      ]
+    }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

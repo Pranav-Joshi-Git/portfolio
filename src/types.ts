@@ -1,0 +1,44 @@
+export interface Meta {
+  name: string
+  title: string
+  tagline: string
+  description: string
+  location: string
+  email: string
+}
+
+export interface Social {
+  label: string
+  href: string
+  icon: 'email' | 'linkedin' | 'github'
+}
+
+export interface ExperienceBullet {
+  text: string
+}
+
+export interface Experience {
+  title: string
+  company: string
+  period: string
+  location: string
+  project: string
+  bullets: string[]
+  recognition: string[]
+}
+
+export interface SkillGroup {
+  label: string
+  skills: string[]
+}
+
+export interface Certification {
+  name: string
+  url: string
+  brand: 'adobe' | 'microsoft' | 'github'
+}
+
+export interface CurrentItem {
+  label: string
+  value: string
+}
