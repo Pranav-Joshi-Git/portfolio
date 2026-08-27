@@ -17,6 +17,7 @@ export const meta: Meta = {
   description: `Associate Consultant at Infosys. ${yearsOfExperience}+ years working across AEM Sites, Adaptive Forms, Assets(DAM), and Edge Delivery Services. Based in Pune, India.`,
   location: 'Pune, India',
   email: 'pranav.joshi.edu@gmail.com',
+  resumeFile: 'PranavJoshi_AEMDeveloper_4YoE',
 }
 
 export const socials: Social[] = [

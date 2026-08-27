@@ -115,8 +115,10 @@ body {
 }
 
 @media (max-width: 640px) {
-  .hero-section { min-height: 60vh; padding-bottom: 2.5rem; }
+  .hero-section { min-height: 60vh; padding-top: 2.5rem !important; padding-bottom: 2.5rem !important; }
   :root { --section-padding: 3.5rem; }
+  .hero-buttons { gap: 0.625rem !important; }
+  .hero-buttons button { padding: 0.625rem 1.125rem !important; font-size: 0.875rem !important; }
 }
 
 /* ─── Stats grid responsive ─── */

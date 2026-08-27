@@ -70,7 +70,7 @@ export default function Hero() {
           {meta.description}
         </motion.p>
 
-        <motion.div variants={item} style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+        <motion.div variants={item} className="hero-buttons" style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
           <button
             onClick={() => scrollTo('contact')}
             style={{

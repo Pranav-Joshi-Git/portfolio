@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import avatar from '../assets/logo.png'
+import { meta } from '../data'
 
 const links = [
   { label: 'Experience', id: 'experience' },
@@ -154,7 +155,7 @@ export default function Nav() {
             ))}
             {themeToggle}
             <a
-              href="/resume.pdf" download
+              href="/resume.pdf" download={`${meta.resumeFile}.pdf`}
               style={{ fontSize: '0.8125rem', fontWeight: 500, padding: '0.375rem 0.875rem', backgroundColor: 'var(--color-accent)', color: 'var(--color-on-accent)', borderRadius: '4px', textDecoration: 'none', transition: 'background-color 0.15s' }}
               onMouseEnter={e => (e.currentTarget.style.backgroundColor = 'var(--color-accent-dark)')}
               onMouseLeave={e => (e.currentTarget.style.backgroundColor = 'var(--color-accent)')}
@@ -167,7 +168,7 @@ export default function Nav() {
           <div className="nav-hamburger">
             {themeToggle}
             <a
-              href="/resume.pdf" download
+              href="/resume.pdf" download={`${meta.resumeFile}.pdf`}
               style={{ fontSize: '0.75rem', fontWeight: 500, padding: '0.3rem 0.7rem', backgroundColor: 'var(--color-accent)', color: 'var(--color-on-accent)', borderRadius: '4px', textDecoration: 'none' }}
             >
               Resume ↓

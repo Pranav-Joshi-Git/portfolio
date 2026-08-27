@@ -5,6 +5,7 @@ export interface Meta {
   description: string
   location: string
   email: string
+  resumeFile: string
 }
 
 export interface Social {
