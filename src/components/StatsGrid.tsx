@@ -1,10 +1,11 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
+import { yearsOfExperience, experiences, certifications } from '../data'
 
 const stats = [
-  { value: '4+', label: 'Years experience' },
-  { value: '2', label: 'Companies' },
-  { value: '3', label: 'Certifications' },
+  { value: `${yearsOfExperience}+`, label: 'Years experience' },
+  { value: `${experiences.length}`, label: 'Companies' },
+  { value: `${certifications.length}`, label: 'Certifications' },
   { value: '404', label: 'AEM errors resolved' },
 ]
 

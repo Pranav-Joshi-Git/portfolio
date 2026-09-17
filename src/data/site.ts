@@ -6,7 +6,7 @@ const totalMonths =
   (now.getFullYear() - careerStart.getFullYear()) * 12 + (now.getMonth() - careerStart.getMonth())
 const fullYears = Math.floor(totalMonths / 12)
 const remainingMonths = totalMonths % 12
-const yearsOfExperience = parseFloat(
+export const yearsOfExperience = parseFloat(
   (fullYears + Math.round((remainingMonths / 12) * 10) / 10).toFixed(1)
 )
 

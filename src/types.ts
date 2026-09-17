@@ -14,10 +14,6 @@ export interface Social {
   icon: 'email' | 'linkedin' | 'github'
 }
 
-export interface ExperienceBullet {
-  text: string
-}
-
 export interface Experience {
   title: string
   company: string
@@ -36,11 +32,6 @@ export interface SkillGroup {
 export interface Certification {
   name: string
   url: string
-  brand: 'adobe' | 'microsoft' | 'github'
+  brand: 'adobe' | 'microsoft' | 'github' | 'google'
   type: 'certification' | 'course'
-}
-
-export interface CurrentItem {
-  label: string
-  value: string
 }

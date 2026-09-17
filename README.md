@@ -37,14 +37,33 @@ Get these from [emailjs.com](https://www.emailjs.com) → Email Services / Email
 
 ## Updating Content
 
-All content is in `src/data/` — no need to touch component files.
+Most content lives in `src/data/` — no need to touch component files for these.
 
 | File | What to update |
 |------|---------------|
 | `src/data/site.ts` | Name, tagline, description, email, resume filename |
 | `src/data/experience.ts` | Work history |
-| `src/data/skills.ts` | Skill groups, certifications |
-| `src/data/currently.ts` | Currently working on / learning |
+| `src/data/skills.ts` | Skill groups |
+| `src/data/certifications.ts` | Certifications & courses |
+| `src/data/sections.ts` | Section ids shared by the nav and `App.tsx` (rarely needs touching) |
+
+The stats grid (years of experience, company count, certification count) derives its numbers from this data automatically — you never need to hand-update a count there.
+
+### Adding a certification
+
+1. If it's a new brand, add the brand name to `Certification['brand']` in `src/types.ts`.
+2. Drop a logo file into `src/assets/brands/<brand>.<svg|png>` — the filename (without extension) must match the `brand` value exactly, e.g. `google` → `src/assets/brands/google.svg`.
+3. Add an entry to `src/data/certifications.ts`.
+
+That's it — no component code to touch. `CertificationCarousel.tsx` picks up the logo file automatically (via `import.meta.glob`), and the "Certifications" stat updates itself since it's derived from `certifications.length`.
+
+**Caveat:** a misspelled or missing brand name won't break the build — it just falls back to a capitalized label (e.g. `googlecloud` → "Googlecloud" instead of "Google Cloud"). If you want exact display casing, add an entry to the `brandLabels` map in `CertificationCarousel.tsx`.
+
+### Adding a job / work experience
+
+Add an entry to `src/data/experience.ts`. The "Companies" stat updates automatically.
+
+**Caveat:** the About section bio in `src/components/Biography.tsx` is hand-written prose, not derived from `experience.ts`. It mentions your current role, company, and tenure in freeform text — if any of that changes, you need to manually rewrite the relevant sentences there too.
 
 ### Updating the resume
 

@@ -18,7 +18,6 @@
   --color-accent-dark: #D4A900;
   --color-accent-text: #7A5C00;
   --color-on-accent: #1C1C1A;
-  --color-github-logo: #24292e;
 
   /* ─── Structure ─── */
   --color-border: #E4E2DE;
@@ -39,7 +38,6 @@
   --color-accent: #F5C518;
   --color-accent-dark: #D4A900;
   --color-accent-text: #F5C518;
-  --color-github-logo: #EEECEA;
   --color-border: #2C2C29;
 }
 
@@ -51,6 +49,10 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+[data-theme="dark"] .cert-logo-invert-dark {
+  filter: invert(1);
 }
 
 body {

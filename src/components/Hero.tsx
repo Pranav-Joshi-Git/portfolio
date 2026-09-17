@@ -1,5 +1,5 @@
 import { motion, type Variants } from 'framer-motion'
-import { meta } from '../data'
+import { meta, SECTION_HERO, SECTION_EXPERIENCE, SECTION_CONTACT } from '../data'
 
 const container: Variants = {
   hidden: {},
@@ -18,7 +18,7 @@ export default function Hero() {
 
   return (
     <section
-      id="hero"
+      id={SECTION_HERO}
       className="hero-section"
       style={{
         display: 'flex',
@@ -72,7 +72,7 @@ export default function Hero() {
 
         <motion.div variants={item} className="hero-buttons" style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
           <button
-            onClick={() => scrollTo('contact')}
+            onClick={() => scrollTo(SECTION_CONTACT)}
             style={{
               padding: '0.75rem 1.5rem',
               backgroundColor: 'var(--color-accent)',
@@ -96,7 +96,7 @@ export default function Hero() {
             Let's talk →
           </button>
           <button
-            onClick={() => scrollTo('experience')}
+            onClick={() => scrollTo(SECTION_EXPERIENCE)}
             style={{
               padding: '0.75rem 1.5rem',
               backgroundColor: 'transparent',

@@ -13,6 +13,7 @@ export default function Section({ id, label, divider = true, children }: Section
         maxWidth: 'var(--max-width)',
         margin: '0 auto',
         padding: '0 1.5rem var(--section-padding)',
+        scrollMarginTop: '56px',
       }}
     >
       {divider && <hr className="divider" style={{ marginTop: 0, marginBottom: '3rem' }} />}

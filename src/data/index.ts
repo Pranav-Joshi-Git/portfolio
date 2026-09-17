@@ -1,4 +1,5 @@
-export { meta, socials } from './site'
+export { meta, socials, yearsOfExperience } from './site'
 export { experiences } from './experience'
-export { skillGroups, certifications } from './skills'
-export { currentItems } from './currently'
+export { skillGroups } from './skills'
+export { certifications } from './certifications'
+export { SECTION_HERO, SECTION_EXPERIENCE, SECTION_ABOUT, SECTION_CONTACT, navLinks } from './sections'

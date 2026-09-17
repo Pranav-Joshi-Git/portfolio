@@ -1,6 +1,7 @@
 import Nav from './components/Nav'
 import Hero from './components/Hero'
 import Section from './components/Section'
+import { SECTION_EXPERIENCE, SECTION_ABOUT, SECTION_CONTACT } from './data'
 import StatsGrid from './components/StatsGrid'
 import SkillGroups from './components/SkillGroups'
 import CertificationCarousel from './components/CertificationCarousel'
@@ -30,15 +31,15 @@ export default function App() {
           <CertificationCarousel />
         </Section>
 
-        <Section id="experience" label="Experience">
+        <Section id={SECTION_EXPERIENCE} label="Experience">
           <ExperienceList />
         </Section>
 
-        <Section id="about" label="About">
+        <Section id={SECTION_ABOUT} label="About">
           <Biography />
         </Section>
 
-        <Section id="contact" label="Contact">
+        <Section id={SECTION_CONTACT} label="Contact">
           <h2 style={{ fontSize: '1.75rem', fontWeight: 700, letterSpacing: '-0.02em', marginBottom: '0.75rem' }}>
             Have something in mind?
           </h2>

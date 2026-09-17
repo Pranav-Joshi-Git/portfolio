@@ -2,13 +2,7 @@ import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import avatarWebp from '../assets/logo.png?w=90&format=webp&as=url'
 import avatarPng from '../assets/logo.png?w=90&as=url'
-import { meta } from '../data'
-
-const links = [
-  { label: 'Experience', id: 'experience' },
-  { label: 'About', id: 'about' },
-  { label: 'Contact', id: 'contact' },
-]
+import { meta, navLinks, SECTION_HERO } from '../data'
 
 function SunIcon() {
   return (
@@ -42,7 +36,7 @@ export default function Nav() {
     const handleScroll = () => {
       const mid = window.scrollY + window.innerHeight * 0.5
       let current = ''
-      for (const { id } of links) {
+      for (const { id } of navLinks) {
         const el = document.getElementById(id)
         if (!el) continue
         const top = el.getBoundingClientRect().top + window.scrollY
@@ -126,7 +120,7 @@ export default function Nav() {
         }}>
           {/* Logo */}
           <button
-            onClick={() => scrollTo('hero')}
+            onClick={() => scrollTo(SECTION_HERO)}
             style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', background: 'none', border: 'none', cursor: 'pointer', flexShrink: 0 }}
           >
             <picture>
@@ -140,7 +134,7 @@ export default function Nav() {
 
           {/* Desktop links — hidden on mobile via CSS */}
           <div className="nav-links">
-            {links.map(({ label, id }) => (
+            {navLinks.map(({ label, id }) => (
               <button
                 key={id}
                 onClick={() => scrollTo(id)}
@@ -206,7 +200,7 @@ export default function Nav() {
               display: 'flex', flexDirection: 'column',
             }}
           >
-            {links.map(({ label, id }) => (
+            {navLinks.map(({ label, id }) => (
               <button
                 key={id}
                 onClick={() => scrollTo(id)}
