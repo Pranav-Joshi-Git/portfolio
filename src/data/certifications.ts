@@ -14,8 +14,8 @@ export const certifications: Certification[] = [
     type: 'certification',
   },
   {
-    name: 'Google Cloud Certified - Build with Gemini',
-    url: 'https://www.credly.com/badges/5afa803f-e50b-4aff-a497-699331e7e5fd/public_url',
+    name: 'Build with Gemini - Track 2: Platform IT Developer',
+    url: 'https://www.credly.com/badges/bedd1654-6c1c-4eae-bb19-5d2a7652f52a/public_url',
     brand: 'google',
     type: 'certification',
   },
