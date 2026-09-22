@@ -12,5 +12,9 @@ export const skillGroups: SkillGroup[] = [
   {
     label: 'Web & Tools',
     skills: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'Git', 'Maven', 'Jira', 'Confluence'],
+  },
+  {
+    label: 'AI Tools & Automation',
+    skills: ['GitHub Copilot', 'Claude Code', 'Adobe Experience Modernization Agent (EMA)', 'Model Context Protocol (MCP)', 'Google Cloud Agent Platform']
   }
 ]
